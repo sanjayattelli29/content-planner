@@ -4,7 +4,7 @@ import React from "react";
 function Year() {
   const { year, setYear } = useTasks();
 
-  const [activeIndex, setActiveIndex] = React.useState(2024);
+  const [activeIndex, setActiveIndex] = React.useState(2025);
 
   return (
     <div className="relative p-3 flex flex-around w-[8vw] items-center gap-3 bg-[#F9F9F9] border-2 border-white rounded-md">

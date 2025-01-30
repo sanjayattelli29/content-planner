@@ -62,8 +62,9 @@ export default function Home() {
               animate="visible"
             >
               {filteredList.map((task) => (
-                <TaskItem key={task.id} task={task} />
+                <TaskItem key={task._id as string} task={task} />
               ))}
+
 
               {/* Add Task Button */}
               {index === 0 && (

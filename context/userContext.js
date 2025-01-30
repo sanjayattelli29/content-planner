@@ -9,7 +9,7 @@ const UserContext = React.createContext();
 axios.defaults.withCredentials = true;
 
 export const UserContextProvider = ({ children }) => {
-  const serverUrl = process.env.NEXT_PUBLIC_SERVER_URL || "http://localhost:8000" ;
+  const serverUrl = process.env.NEXT_PUBLIC_SERVER_URL || "https://content-planner.onrender.com" ;
 
   const router = useRouter();
 

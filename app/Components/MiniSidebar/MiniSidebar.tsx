@@ -9,7 +9,6 @@ import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import React from "react";
-import { MdAutoDelete } from "react-icons/md";
 
 function MiniSidebar() {
   const pathname = usePathname();
@@ -38,12 +37,7 @@ function MiniSidebar() {
       icon: <IconStopwatch strokeColor={getStrokeColor("/overdue")} />,
       title: "Overdue",
       link: "/overdue",
-    },
-    {
-      icon: <MdAutoDelete strokeColor={getStrokeColor("/delete")} />,
-      title: "Deleted",
-      link: "/delete",
-    },
+    }
   ];
   return (
     <div className="basis-[5rem] flex flex-col bg-[#f9f9f9]">
