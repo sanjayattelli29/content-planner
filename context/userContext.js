@@ -84,7 +84,7 @@ export const UserContextProvider = ({ children }) => {
       router.push("/");
     } catch (error) {
       console.log("Error logging in user", error);
-      toast.error(error.response.data.message);
+      toast.error(error.response?.data.message);
     }
   };
 
